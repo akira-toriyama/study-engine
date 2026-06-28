@@ -2,7 +2,7 @@
   "name": "study-engine",
   "version": "0.1.0",
   "description": "Spaced-repetition study app (SM-2) — Electron + React + TS. Drives the private study-log. AWS / English / any domain.",
-  "author": "emmett-lathrop-brown",
+  "author": "akira-toriyama",
   "license": "MIT",
   "main": "./out/main/index.js",
   "scripts": {
