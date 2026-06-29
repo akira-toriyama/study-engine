@@ -14,6 +14,7 @@ Claude Code が**出題・採点・SM-2・問題生成・知識育成**を担う
 
 - 忘却曲線の管理は **エンジン(`src/engine/srs.ts`)に一本化**。Obsidian の Spaced Repetition プラグイン等は**使わない**(二重管理回避)。
 - データは素の **JSON**(問題・状態・履歴)+ 平文 md(`learned/` のみ)。ビューアロックインなし。問題は構造化が要るので 1 問 1 JSON、`learned/` は人が肉付けする散文なので md。
+- **UI / 見た目を変えるときは [`DESIGN.md`](DESIGN.md) に従う**(`src/renderer/` の色・タイポ・spacing・角丸・学習グレードの意味色など)。DESIGN.md は `src/renderer/src/styles.css` の token を写し取った視覚 identity の正本。token を変えるときは styles.css と DESIGN.md を**同一 PR で**更新し、`npx @google/design.md lint DESIGN.md` を通す(新しいデザインの発明はしない=既存の見た目を保つ)。
 
 ## 1. リポジトリ構成
 
