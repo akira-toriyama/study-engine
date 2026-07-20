@@ -16,4 +16,4 @@ permissions:
 
 jobs:
   design-md-lint:
-    uses: akira-toriyama/.github/.github/workflows/design-md-lint.yml@v1
+    uses: akira-toriyama/.github/.github/workflows/design-md-lint.yml@v2
